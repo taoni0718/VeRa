@@ -1,7 +1,42 @@
-# MetaSpy
-Anonymous Artifact Repository of MetaSpy (CCS'26 Submission). More details will be available.
+# MetaSpy Artifact
 
-## Experimental Details
+This repository contains the **artifact for MetaSpy**, a Wi-Fi power based side-channel attack.  
+It includes:
+
+- Hardware design files for the Wi-Fi power probe
+- MATLAB scripts for signal preprocessing and feature extraction
+- Sample feature datasets for three classification tasks
+- A sketch of a Bi-LSTM model in Python
+
+The goal of this README is to give **clear, reproducible steps** for going from the raw power traces (or the provided samples) to the classification results.
+
+---
+
+## 1. Repository Layout
+
+```text
+MetaSpy-Artifact-main/
+├── code/                 # MATLAB + Python code
+│   ├── feature_extraction.m
+│   ├── GenDataDevice.m
+│   ├── GenerateStatic.m
+│   ├── PlotDeviceSignalData.m
+│   ├── PlotREHDeviceSignal0619.m
+│   ├── peaks.m
+│   ├── pk2pk.m
+│   ├── Entropy.m
+│   └── bilstm.py         # example deep model (skeleton)
+├── data_samples/         # sample feature datasets
+│   ├── device_fingerprinting_data.mat
+│   ├── data_app_fingerprinting.mat
+│   └── data_website_fingerprinting.mat
+├── hardware_design/      # PCB / circuit of the probe
+│   ├── circuit_diagram.png
+│   └── Gerber_*.{GTL,GBL,...}
+└── README.md             # (this file)
+```
+
+## 2. Experimental Details
 
 ### Appendix A: Full list of the energy-based features (time- and frequency-domain) of the captured Wi-Fi power
 |    **Time-domain (Abbr.)**    |                                                                                                       **Description**                                                                                                       |

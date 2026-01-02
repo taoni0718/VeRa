@@ -30,6 +30,10 @@ MetaSpy-Artifact-main/
 │   ├── device_fingerprinting_data.mat
 │   ├── data_app_fingerprinting.mat
 │   └── data_website_fingerprinting.mat
+│   └── data_inappactivity_fingerprinting.mat
+│   └── data_vrspecific.mat
+│   └── data_avatar_uid.mat
+│   └── data_avatar_keystroke.mat
 ├── hardware_design/      # PCB / circuit of the probe
 │   ├── circuit_diagram.png
 │   └── Gerber_*.{GTL,GBL,...}
